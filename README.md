@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+```
+https://element.eleme.cn/#/zh-CN/component/transition
+https://cn.vuejs.org/v2/guide/typescript.html
+```
