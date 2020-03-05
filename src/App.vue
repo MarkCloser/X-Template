@@ -44,11 +44,24 @@
                                         </el-table>
                                     </div>
                                 </el-card>
-                                <el-card v-if="taskItem.name === 'Purchase'">
+                                <el-card v-if="taskItem.name === '采购'">
                                     <div slot="header" class="clearfix">
                                         <el-tag effect="dark">{{ taskItem.name }}</el-tag>
                                      </div>
-                                    <h1>FUCK</h1>
+                                     <div class="text item">
+                                         <el-table :data="taskItem.purchase" style="width: 100%">
+                                            <el-table-column prop="name" label="产品" width="110"></el-table-column>
+                                            <el-table-column prop="model" label="型号" width="60"></el-table-column>
+                                            <el-table-column prop="brand" label="品牌" width="70"></el-table-column>
+                                            <el-table-column prop="storage" label="库存" width="55"></el-table-column>
+                                            <el-table-column prop="target" label="采购" width="55"></el-table-column>
+                                            <el-table-column fixed="right" label="操作" width="80">
+                                                <template slot-scope="scope">
+                                                    <el-button  @click="dealPurchase(scope.row)" type="text" size="small">添加采购</el-button>
+                                                </template>
+                                            </el-table-column>
+                                        </el-table>
+                                     </div>
                                 </el-card>
                             </li>
                         </ul>
@@ -104,6 +117,10 @@ export default class App extends Vue {
     }
 
     manOrder(row: Order) {
+        console.log(row)
+    }
+
+    dealPurchase(row: any) {
         console.log(row)
     }
 

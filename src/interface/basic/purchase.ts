@@ -4,6 +4,10 @@ export interface Purchase {
     id: number,
     // 采购产品名
     name: string,
+    // 型号
+    model: string;
+    // 品牌
+    brand: string;
     // 库存数量
     storage: number,
     // 计划采购数量

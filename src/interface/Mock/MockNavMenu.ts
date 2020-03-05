@@ -4,7 +4,7 @@ import { NavMenu } from '../mix-interface/NavMenu'
 export const mockNavMenu : NavMenu[] =   [
     {
         index: "1",
-        navMode: 'outLine',
+        navMode: 'online',
         name: "訂單管理",
         childMenu: [
             {
@@ -24,7 +24,7 @@ export const mockNavMenu : NavMenu[] =   [
     },
     {
         index: "2",
-        navMode: 'outLine',
+        navMode: 'online',
         name: "倉庫管理",
         childMenu: [
             {
@@ -44,7 +44,7 @@ export const mockNavMenu : NavMenu[] =   [
     },
     {
         index: "3",
-        navMode: 'outLine',
+        navMode: 'online',
         name: "用戶管理",
         childMenu: [
             {
@@ -64,7 +64,7 @@ export const mockNavMenu : NavMenu[] =   [
     },
     {
         index: "4",
-        navMode: 'onLine',
+        navMode: 'online',
         name: "打印管理",
         childMenu: [
             {
@@ -84,8 +84,8 @@ export const mockNavMenu : NavMenu[] =   [
     },
     {
         index: "5",
-        navMode: 'outLine',
-        name: "經營數據",
+        navMode: 'online',
+        name: "经营数据",
         childMenu: [
             {
                 index: "5-1",
@@ -104,7 +104,12 @@ export const mockNavMenu : NavMenu[] =   [
     },
     {
         index: "6",
-        navMode: 'onLine',
-        name: "没事就看看"
+        navMode: 'online',
+        name: "产品采购"
     },
+    {
+        index: "7",
+        navMode: 'online',
+        name: '销售产品管理'
+    }
 ];
