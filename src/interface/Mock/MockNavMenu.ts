@@ -110,6 +110,23 @@ export const mockNavMenu : NavMenu[] =   [
     {
         index: "7",
         navMode: 'online',
-        name: '销售产品管理'
+        name: '产品管理',
+         childMenu: [
+            {
+                index: "7-1",
+                name: "浏览和管理",
+                routeUrl: "/product/manage"
+            },
+            {
+                index: "7-2",
+                name: "数据报表", 
+                routeUrl: "/product/data"
+            },
+            {
+                index: "7-3",
+                name: "产品编辑",
+                routeUrl: "/product/edit"
+            }
+        ]
     }
 ];
